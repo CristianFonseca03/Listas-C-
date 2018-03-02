@@ -13,8 +13,12 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <stack>
+#include <cstdio>
 #include "Student.hpp"
 #include "Nodelist.hpp"
+#include "Stack.hpp"
+#include "Stack.cpp"
 
 using namespace std;
 
@@ -22,12 +26,19 @@ using namespace std;
  * 
  */
 int main() {
-    Student con("M03","Consola 360",55);
-    Nodelist<Student> node(con);
-    //cout<<node.getInfo().toString()<<endl;
-    
-    Nodelist<int> i(30);
-    cout<<i.getInfo()<<endl;
-    return EXIT_SUCCESS;
+    Stack<Student>* stack=new Stack<Student>();
+    stack->push(Student("A1","Juan",3));
+    stack->push(Student("A2","Andres",4));
+    stack->push(Student("A3","Cristian",5));
+    printf("%s",stack->isEmpty()?"Pila vacia\n":"Con elementos\n");
+    Student t= stack->pop();
+    cout<<t.toString()<<endl;
+    printf("%s",stack->isEmpty()?"Pila vacia\n":"Con elementos\n");
+    t= stack->pop();
+    cout<<t.toString()<<endl;
+    printf("%s",stack->isEmpty()?"Pila vacia\n":"Con elementos\n");
+    t= stack->pop();
+    cout<<t.toString()<<endl;
+    printf("%s",stack->isEmpty()?"Pila vacia\n":"Con elementos\n");
 }
 
