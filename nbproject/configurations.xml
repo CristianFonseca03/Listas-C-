@@ -7,6 +7,7 @@
       <itemPath>Nodelist.hpp</itemPath>
       <itemPath>Stack.hpp</itemPath>
       <itemPath>Student.hpp</itemPath>
+      <itemPath>Tail.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -17,6 +18,7 @@
                    projectFiles="true">
       <itemPath>Stack.cpp</itemPath>
       <itemPath>Student.cpp</itemPath>
+      <itemPath>Tail.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -51,6 +53,10 @@
       </item>
       <item path="Student.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Tail.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tail.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -83,6 +89,10 @@
       <item path="Student.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Student.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tail.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tail.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
