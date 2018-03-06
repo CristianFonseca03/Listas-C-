@@ -37,7 +37,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Stack.o \
 	${OBJECTDIR}/Student.o \
-	${OBJECTDIR}/Tail.o \
 	${OBJECTDIR}/main.o
 
 
@@ -74,11 +73,6 @@ ${OBJECTDIR}/Student.o: Student.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Student.o Student.cpp
-
-${OBJECTDIR}/Tail.o: Tail.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tail.o Tail.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
